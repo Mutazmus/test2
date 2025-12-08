@@ -1,16 +1,56 @@
-# products
+# 📦 XView – Excel Product Viewer
 
-A new Flutter project.
+**XView** is a Flutter-based desktop/mobile app that allows users to import product data from Excel files (`.xlsx`) and view it in a structured table format.  
+It's ideal for inventory managers, store owners, or anyone who works with product data stored in spreadsheets.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📂 Upload `.xlsx` Excel files from local storage
+- 📊 Display product data in a scrollable table (DataTable)
+- 🖼️ Show product image from online URLs
+- 📝 Includes product name, description (EN/AR), price (AED), barcode, and quantity
+- 🔄 Easy refresh by uploading a new file
+- 🧑‍💻 Built with clean Flutter UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Expected Excel Format
+
+The Excel file should follow this column order (starting from Column A):
+
+| Column | Field                     |
+|--------|---------------------------|
+| A      | Photo URL (for product)   |
+| B      | Price (AED)               |
+| C      | Description (EN)          |
+| D      | Description (AR)          |
+| E      | Product Name (AR)         |
+| F      | Product Name (EN)         |
+| G      | Barcode                   |
+| H      | Quantity                  |
+
+---
+
+## 📸 App Preview
+
+> *(Add screenshot if available)*  
+> ![Screenshot](screenshots/app_ui.png)
+
+---
+
+## 🧪 How to Run
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/xview.git
+
+# 2. Navigate to the project
+cd xview
+
+# 3. Install dependencies
+flutter pub get
+
+# 4. Run the app (desktop or mobile)
+flutter run
